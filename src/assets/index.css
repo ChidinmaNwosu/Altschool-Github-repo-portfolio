@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-width: 1280px;
+}
+
+/* styles for the Navbar component */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: darkslateblue;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .icon-text {
+    display: none;
+  }
+}
+
+.nav-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  color: #fff;
+}
+
+.nav-list :hover {
+  text-decoration: underline;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.github-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/*Stlyes for the repo, repo container, repo card */
+.repo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: aliceblue;
+  padding: 20px;
+  margin: 30px;
+}
+
+.repo-card {
+  width: 500px;
+  height: 200px;
+  font-size: 18px;
+  border: 10px solid grey;
+  background-color: lightblue;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .repo-card {
+    width: fit-content;
+  }
+}
+
+.repo-name {
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.language {
+  padding: 5px;
+}
+.date {
+  padding: 5px;
+}
+.visibility {
+  padding: 5px;
+}
+
+/*Styles for the pagination button */
+.next {
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  border: 1px solid black;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+/* Styles for the SearchBar input field*/
+.input-wrapper {
+  background-color: #ffffff;
+  width: 50%;
+  border-radius: 10px;
+  height: 40px;
+  padding: 0 15px;
+  box-shadow: 0px 0px 8px #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 16px;
+  width: 100%;
+  margin-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#search-icon {
+  color: royalblue;
+}
+
+/*Styles for the Search results list */
+.results-list {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px #ddd;
+  border-radius: 10px;
+  max-height: 300px;
+  margin-left: 30px;
+  margin-top: 10px;
+  overflow-y: scroll;
+}
+
+/*Styles for the Repo-details page*/
+#repo-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: 100vh;
+  padding: 10px;
+}
+
+@media screen and(max-width:767px) {
+  #repo-detail {
+    align-items: flex-start;
+  }
+}
+
+.repo-detail-card {
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px #383737;
+  padding: 20px;
+}
+.repo-detail-card p {
+  padding: 5px 0;
+  font-weight: 600;
+}
+
+/*Error page styles*/
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-img {
+  width: 100%;
+}
+
+.error-container h1,
+.error-container p {
+  text-align: center;
+}
