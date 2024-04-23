@@ -21,9 +21,7 @@ function App() {
           <Route path="/repo-page/:id" element={<RepoDetails/>} />
           <Route path='*' element={<ErrorPage/>} />
           <Route path= "/home" element={<Home/>} />
-
-
-        </Routes>
+       </Routes>
       </div>
     </>
   );
